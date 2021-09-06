@@ -1,8 +1,71 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #444;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid goldenrod;
+        padding: 20px;
+}
+
+h1 {
+    font-family: 'Lobster';
+    font-size: 50px;
+}
+#branding {
+    color: goldenrod;
+}
+#branding span {
+    color: #fff;
+}
+
+#watch-list {
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coin-card {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.coin-card img {
+    width: 100px;
+}
+
+.ticker {
+    font-size:20px; 
+    color:goldenrod; 
+    font-weight: bold; 
+    padding:5px;
+}
+.coin-name {
+    font-size: 15px;
+    padding: 5px;
+    color: darkgoldenrod;
+}
+.price {
+    font-size: 15px;
+    padding: 5px;
+    color: darkgoldenrod;
+}
+.change {
+    
 }
