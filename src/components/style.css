@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #444;
+    background-color: #222;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -15,8 +15,23 @@ body {
 #header {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         border-bottom: 1px solid goldenrod;
         padding: 20px;
+}
+
+#header input {
+    background-color: #222;
+    border: 1px solid goldenrod;
+    padding: 10px;
+    color: goldenrod;
+    border-radius: 5px;
+    margin-top: 17px;
+}
+
+#header input:focus { 
+    outline: none !important;
+    border-color: darkgoldenrod;
 }
 
 h1 {
@@ -50,11 +65,16 @@ h1 {
     width: 100px;
 }
 
+.coin-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid khaki;
+}
+
 .ticker {
     font-size:20px; 
     color:goldenrod; 
     font-weight: bold; 
-    padding:5px;
+    padding: 15px 5px 5px;
 }
 .coin-name {
     font-size: 15px;
@@ -62,10 +82,41 @@ h1 {
     color: darkgoldenrod;
 }
 .price {
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px;
     color: darkgoldenrod;
 }
-.change {
-    
+p.change {
+    color: darkgoldenrod;
+    padding: 5px;
+}
+
+span.negative {
+    color: #f44336;
+}
+
+span.positive {
+    color: #43a047;
+}
+
+#credit {
+    font-size: 10px;
+    position: relative;
+    background-image: url(../CoinGecko-WhiteText.png);
+    display: block;
+    clear: both;
+    background-size: 125px;
+    height: 50px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+#credit a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#credit a:hover {
+    color:goldenrod; 
 }

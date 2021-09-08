@@ -46,10 +46,12 @@ const DisplayPage = () => {
                             price={coin.current_price}
                             change={coin.price_change_percentage_24h}
                         /> 
-                    );
+                    )
                 }
-                )};
+                )}
+                
             </div>
+            <div id="credit"><a href ="https://www.coingecko.com/en" target="_blank">Coin data supplied by</a></div>
         </div>
     );
 }
